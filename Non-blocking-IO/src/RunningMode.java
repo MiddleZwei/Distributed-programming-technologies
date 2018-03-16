@@ -1,9 +1,8 @@
-import com.sun.org.apache.regexp.internal.RE;
-
 public enum RunningMode {
 
     WRITE("write", 1),
-    READ("read", 0);
+    READ("read", 0),
+    EXIT("exit", -1);
 
     private final String _value;
     private final int _mark;
@@ -14,9 +13,9 @@ public enum RunningMode {
     }
 
     public static RunningMode getMode(String value){
-        if (value.equalsIgnoreCase(WRITE.getValue())) return WRITE;
-        else if (value.equalsIgnoreCase(READ.getValue())) return READ;
-        else return null;
+            if (value.equalsIgnoreCase(WRITE.getValue())) return WRITE;
+            else if (value.equalsIgnoreCase(READ.getValue())) return READ;
+            else return EXIT;
     }
 
     public String getValue(){

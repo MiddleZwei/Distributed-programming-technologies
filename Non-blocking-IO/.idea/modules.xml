@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TPO1-non-blocking-io.iml" filepath="$PROJECT_DIR$/TPO1-non-blocking-io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Non-blocking-IO.iml" filepath="$PROJECT_DIR$/Non-blocking-IO.iml" />
     </modules>
   </component>
 </project>

@@ -1,4 +1,3 @@
-import java.io.IOException;
 import java.nio.IntBuffer;
 import java.nio.MappedByteBuffer;
 
@@ -10,11 +9,12 @@ public class Reader {
         _buffer = buffer;
     }
 
-    public void run() throws IOException {
+    public void run() {
 
       IntBuffer intBuffer = _buffer.asIntBuffer();
 
         while (true) {
+            System.out.print(intBuffer.get(0)+":");
             switch (intBuffer.get(0)){
                 case 1:
                     sum(intBuffer);
@@ -32,8 +32,8 @@ public class Reader {
         int a = intBuffer.get();
         int b = intBuffer.get();
         System.out.println(String.format("Read: %d + %d = %d", a, b, a + b));
+        intBuffer.put(0, RunningMode.READ.getMark());
         intBuffer.rewind();
-        intBuffer.put(RunningMode.READ.getMark());
     }
 
     private void sleep() {

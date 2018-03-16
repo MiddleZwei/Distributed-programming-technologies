@@ -1,8 +1,5 @@
-import java.io.IOException;
-import java.io.RandomAccessFile;
 import java.nio.IntBuffer;
 import java.nio.MappedByteBuffer;
-import java.nio.channels.FileChannel;
 import java.util.Random;
 
 public class Writer{
@@ -20,9 +17,10 @@ public class Writer{
 
         IntBuffer intBuffer = mappedFile.asIntBuffer();
 
+
         for (int i = 0; i < iterations; i++){
-            if (intBuffer.limit() == 0) writeNumbers(intBuffer);
-            else
+//            if (intBuffer.limit() == 0) writeNumbers(intBuffer);
+//            else
                 switch (intBuffer.get(0)){
                     case 1:
                         sleep();
