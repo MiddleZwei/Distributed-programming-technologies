@@ -95,18 +95,10 @@ public class NIOClient {
             switch (mode) {
 
                 case Mode.MODE_ADD:
-                    double[] numbers = new double[arguments.length];
-                    for (int i = 0; i < arguments.length; i++)
-                        numbers[i] = Double.parseDouble(arguments[i]);
-                    request = new AddRequest(numbers);
+                    request = new AddRequest(arguments);
                     break;
                 case Mode.MODE_ECHO:
-                    StringBuffer buffer = new StringBuffer();
-                    for (String arg : arguments) {
-                        buffer.append(arg)
-                                .append(" ");
-                    }
-                    request = new EchoRequest(buffer.toString());
+                    request = new EchoRequest(arguments);
                     break;
             }
             return request;

@@ -3,10 +3,15 @@ package com.illia.halych.protocols.Echo;
 import com.illia.halych.protocols.IRequest;
 
 public class EchoRequest implements IRequest {
-    private final String _message;
+    private String _message;
 
-    public EchoRequest(String message) {
-        _message = message;
+    public EchoRequest(String[] message) {
+        StringBuffer buffer = new StringBuffer();
+        for (String arg : message) {
+            buffer.append(arg)
+                    .append(" ");
+        }
+        _message = buffer.toString();
     }
 
     @Override
