@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add integer values</title>
+</head>
+<body>
+    <form method="get" action="/WebServlet/add">
+        <label>
+            <input type="number" name="component1"/>
+        </label>
+        <br>
+        <label>
+            <input type="number" name="component2"/>
+        </label>
+        <br>
+        <input type="submit" value="Add" />
+    </form>
+    <form method="post" action="/WebServlet/add">
+        <input type="number" name="component1" />
+        <br>
+        <input type="number" name="component2"/>
+        <br>
+        <input type="submit" value="Add" />
+    </form>
+</body>
+</html>
