@@ -3,25 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <title>Add integer values</title>
+    <link rel="stylesheet" type="text/css" href="theme.css">
 </head>
 <body>
-    <form method="get" action="/WebServlet/add">
-        <label>
-            <input type="number" name="component1"/>
-        </label>
-        <br>
-        <label>
-            <input type="number" name="component2"/>
-        </label>
-        <br>
-        <input type="submit" value="Add" />
-    </form>
-    <form method="post" action="/WebServlet/add">
-        <input type="number" name="component1" />
-        <br>
-        <input type="number" name="component2"/>
-        <br>
-        <input type="submit" value="Add" />
-    </form>
+
+    <!--<form id="contact" method="get" action="/add">-->
+        <!--<label>-->
+            <!--<input type="number" name="component1"/>-->
+        <!--</label>-->
+
+        <!--<br>-->
+
+        <!--<label>-->
+            <!--<input type="number" name="component2"/>-->
+        <!--</label>-->
+        <!--<br>-->
+        <!--<input type="submit" value="Add" />-->
+    <!--</form>-->
+
+    <!--<form id="contact2" method="post" action="/add">-->
+        <!--<label>-->
+            <!--<input type="number" name="component1"/>-->
+        <!--</label>-->
+
+        <!--<br>-->
+
+        <!--<label>-->
+            <!--<input type="number" name="component2"/>-->
+        <!--</label>-->
+        <!--<br>-->
+        <!--<input type="submit" value="Add" />-->
+    <!--</form>-->
+
+
+    <div class="container">
+        <form id="contact" action="add" method="GET">
+            <h3>Add 2 integer values</h3>
+            <h4>GET method:</h4>
+            <fieldset>
+                <input placeholder="Integer 1" type="text" name="component1" tabindex="1">
+            </fieldset>
+            <fieldset>
+                <input placeholder="Integer 2" type="text" name="component2" tabindex="2">
+            </fieldset>
+            <fieldset>
+                <button name="submit" value="Add" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+            <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Illia Halych</a></p>
+        </form>
+
+        <hr>
+
+        <form id="contact" action="add" method="POST">
+            <h3>Add 2 integer values</h3>
+            <h4>POST method:</h4>
+            <fieldset>
+                <input placeholder="Integer 1" type="text" name="component1" tabindex="3">
+            </fieldset>
+            <fieldset>
+                <input placeholder="Integer 2" type="text" name="component2" tabindex="4">
+            </fieldset>
+            <fieldset>
+                <button name="submit" value="Add" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+            <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Illia Halych</a></p>
+        </form>
+        <hr>
+    </div>
+
 </body>
 </html>

@@ -11,48 +11,41 @@ import java.util.regex.Pattern;
 @WebServlet("/add")
 public class AddValues extends HttpServlet {
 
-    private static final String COMPONENT1 = "component1";
-    private static final String COMPONENT2 = "component2";
+    private static final String component1 = "component1";
+    private static final String component2 = "component2";
 
-    private static final String INTEGER_PATTERN = "^[0-9]+$";
-    private static final Pattern INTEGER_REGEX = Pattern.compile(INTEGER_PATTERN);
+    private static final String pattern = "^[0-9]+$";
+    private static final Pattern regex = Pattern.compile(pattern);
 
 
-    private static int value(String input){
-        Matcher matcher = INTEGER_REGEX.matcher(input);
+    private static int getValue(String input){
+        Matcher matcher = regex.matcher(input);
         if (!matcher.matches())
             throw new NullPointerException("The match has not been found");
         return Integer.parseInt(input);
     }
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         serviceImpl(request, response);
     }
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         serviceImpl(request, response);
     }
 
-    private void serviceImpl(HttpServletRequest request, HttpServletResponse response) throws ServletException {
-        String component1Input = request.getParameter(COMPONENT1);
-        String component2Input = request.getParameter(COMPONENT2);
+    private void serviceImpl(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String input1 = request.getParameter(component1);
+        String input2 = request.getParameter(component2);
 
-        int component1 = value(component1Input);
-        int component2 = value(component2Input);
+        int comp1 = getValue(input1);
+        int comp2 = getValue(input2);
 
-        PrintWriter output = null;
-        try {
-            output = response.getWriter();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        int total = component1 + component2;
-        output.print("total: " + total);
+
+        PrintWriter output = response.getWriter();
+
+        int sum = comp1 + comp2;
+        output.print("The sum: " + sum);
         output.close();
-    }
-
-    public static void main(String[] args) {
-
     }
 }
