@@ -17,7 +17,7 @@ public class AdderEchoerRemote extends UnicastRemoteObject implements AdderEchoe
     public AddResponse add(AddRequest ar) throws RemoteException {
 
         AddResponse addResponse = new AddResponse();
-        addResponse._sum = ar._a + ar._b;
+        addResponse.setSum(ar.getA()+ar.getB());
 
         return addResponse;
     }
@@ -26,7 +26,7 @@ public class AdderEchoerRemote extends UnicastRemoteObject implements AdderEchoe
     public EchoResponse echo(EchoRequest echoRequest) throws RemoteException{
 
         EchoResponse echoResponse = new EchoResponse();
-        echoResponse._message = echoRequest._statement;
+        echoResponse.setMessage(echoRequest.getStatement());
 
         return echoResponse;
     }

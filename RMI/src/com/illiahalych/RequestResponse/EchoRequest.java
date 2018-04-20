@@ -1,9 +1,19 @@
 package com.illiahalych.RequestResponse;
 
-import java.util.ArrayList;
+
 
 public class EchoRequest implements IRequest {
-    public String _statement;
+
+    private String _statement;
 
     public EchoRequest(){}
+
+
+
+    public String getStatement(){
+        return _statement;
+    }
+    public void setStatement(String msg){
+        _statement = msg;
+    }
 }

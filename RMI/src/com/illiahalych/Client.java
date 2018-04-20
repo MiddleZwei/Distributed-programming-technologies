@@ -13,11 +13,11 @@ public class Client {
 
             // Create requests
             AddRequest addRequest = new AddRequest();
-            addRequest._a = 34;
-            addRequest._b = 4;
+            addRequest.setA(34);
+            addRequest.setB(4);
 
             EchoRequest echoRequest = new EchoRequest();
-            echoRequest._statement = "Hello, Client!";
+            echoRequest.setStatement("Hello, Client!");
 
             // Create a stub
             AdderEchoer stub=(AdderEchoer) Naming.lookup("rmi://localhost:5000/sonoo");
@@ -27,9 +27,9 @@ public class Client {
             EchoResponse echoResponse = stub.echo(echoRequest);
 
             // Output the results
-            System.out.println(addResponse._sum);
-            System.out.println(echoResponse._message);
-            
+            System.out.println(addResponse.getSum());
+            System.out.println(echoResponse.getMessage());
+
         }catch(Exception e){
             e.printStackTrace();
         }
