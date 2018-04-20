@@ -2,34 +2,37 @@ package com.illiahalych;
 
 import com.illiahalych.RequestResponse.AddRequest;
 import com.illiahalych.RequestResponse.AddResponse;
-import com.illiahalych.RequestResponse.IRequest;
-import com.illiahalych.RequestResponse.IResponse;
+import com.illiahalych.RequestResponse.EchoRequest;
+import com.illiahalych.RequestResponse.EchoResponse;
 
 import java.rmi.Naming;
 
 public class Client {
     public static void main(String args[]){
         try{
-            String[] arguments = {"30", "4", "4"};
-            IRequest request = getRequest(arguments);
+            AddRequest addRequest = new AddRequest();
+            addRequest._a = 34;
+            addRequest._b = 4;
 
-            //what's next, how to send it to the server?
+            EchoRequest echoRequest = new EchoRequest();
+            echoRequest.words.add("Hello");
+            echoRequest.words.add(",");
+            echoRequest.words.add(" ");
+            echoRequest.words.add("World");
+            echoRequest.words.add("!");
 
-//            IResponse response = new AddResponse();
 
-            Adder stub=(Adder) Naming.lookup("rmi://localhost:5000/sonoo");
-            System.out.println(stub.add(34,4));
-        }catch(Exception e){}
-    }
 
-    public static IRequest getRequest(String[] arguments){
-        try {
-            IRequest request = null;
-                     request = new AddRequest(arguments);
-            return request;
-        } catch (Exception e){
+            AdderEchoer stub=(AdderEchoer) Naming.lookup("rmi://localhost:5000/sonoo");
+
+            AddResponse addResponse = stub.add(addRequest);
+            EchoResponse echoResponse = stub.echo(echoRequest);
+
+            System.out.println(addResponse._sum);
+            System.out.println(echoResponse._message);
+        }catch(Exception e){
             e.printStackTrace();
         }
-        return null;
     }
+
 }
