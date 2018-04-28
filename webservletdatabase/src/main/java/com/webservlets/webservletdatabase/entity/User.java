@@ -1,17 +1,32 @@
 package com.webservlets.webservletdatabase.entity;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
-@Table(name = "users", catalog = "test")
+@Table(name = "users", schema = "public")
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "user_id")
     private Long id;
 
+    @Column(name = "login")
     private String login;
+    @Column(name = "password")
     private String passsword;
+//    private Integer active;
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
+    private Set<Role> roles;
+
+    public User(User user) {
+//        this.active = user.getActive();
+        this.id = user.getId();
+        this.login = user.getPasssword();
+        this.passsword = user.getPasssword();
+    }
 
     public Long getId() {
         return id;
@@ -43,4 +58,20 @@ public class User {
         this.login = login;
         this.passsword = passsword;
     }
+
+    public Set<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
+    }
+
+//    public Integer getActive() {
+//        return active;
+//    }
+//
+//    public void setActive(Integer active) {
+//        this.active = active;
+//    }
 }

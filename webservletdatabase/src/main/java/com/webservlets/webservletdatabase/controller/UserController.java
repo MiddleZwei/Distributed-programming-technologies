@@ -3,16 +3,14 @@ package com.webservlets.webservletdatabase.controller;
 import com.webservlets.webservletdatabase.entity.request.AddUserRequest;
 import com.webservlets.webservletdatabase.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.*;
 import com.webservlets.webservletdatabase.repository.UserRepository;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/users") // test/hello in tutorial
 public class UserController {
 
     private UserRepository userRepository;
@@ -33,5 +31,16 @@ public class UserController {
         user.setLogin(addUserRequest.getLogin());
         user.setPasssword(addUserRequest.getPassword());
         userRepository.save(user);
+    }
+
+    @GetMapping("/all")
+    public String hello(){
+        return "Hi there";
+    }
+
+    @PreAuthorize("hasAnyRole('ADMIN')")
+    @GetMapping("/secured/all")
+    public String securedHello(){
+        return "Secured Hello";
     }
 }
