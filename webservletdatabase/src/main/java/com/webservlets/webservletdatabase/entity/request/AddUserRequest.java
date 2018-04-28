@@ -1,4 +1,4 @@
-package entity.request;
+package com.webservlets.webservletdatabase.entity.request;
 
 public class AddUserRequest {
 

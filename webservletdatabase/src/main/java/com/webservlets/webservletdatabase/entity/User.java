@@ -1,22 +1,17 @@
-package entity;
+package com.webservlets.webservletdatabase.entity;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "user", catalog = "test")
+@Table(name = "users", catalog = "test")
 public class User {
 
     @Id
-    @GeneratedValue
-    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "login")
     private String login;
-    @Column(name = "password")
     private String passsword;
-
-    public User(){}
 
     public Long getId() {
         return id;
@@ -39,6 +34,13 @@ public class User {
     }
 
     public void setPasssword(String passsword) {
+        this.passsword = passsword;
+    }
+
+    public User(){}
+
+    public User(String login, String passsword) {
+        this.login = login;
         this.passsword = passsword;
     }
 }

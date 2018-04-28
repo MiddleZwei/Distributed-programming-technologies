@@ -1,13 +1,13 @@
-package controller;
+package com.webservlets.webservletdatabase.controller;
 
-import entity.request.AddUserRequest;
-import entity.User;
+import com.webservlets.webservletdatabase.entity.request.AddUserRequest;
+import com.webservlets.webservletdatabase.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import repository.UserRepository;
+import com.webservlets.webservletdatabase.repository.UserRepository;
 
 import java.util.List;
 
