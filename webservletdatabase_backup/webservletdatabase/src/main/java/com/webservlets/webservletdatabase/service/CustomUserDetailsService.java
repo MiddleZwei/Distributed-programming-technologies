@@ -22,8 +22,8 @@ public class CustomUserDetailsService implements UserDetailsService {
         Optional<User> optionalUsers = ur.findByLogin(login);
 
 
-//        optionalUsers
-//                .orElseThrow(() -> new UsernameNotFoundException("Login(username) not found"));
+        optionalUsers
+                .orElseThrow(() -> new UsernameNotFoundException("Login(username) not found"));
 
 
         return optionalUsers
