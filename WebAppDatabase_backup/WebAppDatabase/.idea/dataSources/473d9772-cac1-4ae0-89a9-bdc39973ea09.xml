@@ -909,90 +909,157 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="229" parent="5" name="roles">
+    <table id="229" parent="5" name="resources">
       <Engine>InnoDB</Engine>
     </table>
-    <table id="230" parent="5" name="user_roles">
+    <table id="230" parent="5" name="roles">
       <Engine>InnoDB</Engine>
     </table>
-    <table id="231" parent="5" name="users">
+    <table id="231" parent="5" name="user_resources">
       <Engine>InnoDB</Engine>
     </table>
-    <column id="232" parent="229" name="id">
+    <table id="232" parent="5" name="user_roles">
+      <Engine>InnoDB</Engine>
+    </table>
+    <table id="233" parent="5" name="users">
+      <Engine>InnoDB</Engine>
+    </table>
+    <column id="234" parent="229" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="233" parent="229" name="name">
+    <column id="235" parent="229" name="name">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="236" parent="229" name="content">
+      <Position>3</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="237" parent="229" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="238" parent="230" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="239" parent="230" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="234" parent="229" name="PRIMARY">
+    <key id="240" parent="230" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="235" parent="230" name="user_id">
+    <column id="241" parent="231" name="user_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="236" parent="230" name="role_id">
+    <column id="242" parent="231" name="resource_id">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="237" parent="230" name="user_id">
+    <index id="243" parent="231" name="user_id">
       <ColNames>user_id
-role_id</ColNames>
+resource_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="238" parent="230" name="role_id">
-      <ColNames>role_id</ColNames>
+    <index id="244" parent="231" name="resource_id">
+      <ColNames>resource_id</ColNames>
     </index>
-    <key id="239" parent="230" name="user_id">
+    <key id="245" parent="231" name="user_id">
       <ColNames>user_id
-role_id</ColNames>
+resource_id</ColNames>
       <UnderlyingIndexName>user_id</UnderlyingIndexName>
     </key>
-    <foreign-key id="240" parent="230" name="user_roles_ibfk_1">
+    <foreign-key id="246" parent="231" name="user_resources_ibfk_1">
       <ColNames>user_id</ColNames>
       <RefSchemaName>spring_security_app</RefSchemaName>
       <RefTableName>users</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="241" parent="230" name="user_roles_ibfk_2">
+    <foreign-key id="247" parent="231" name="user_resources_ibfk_2">
+      <ColNames>resource_id</ColNames>
+      <RefSchemaName>spring_security_app</RefSchemaName>
+      <RefTableName>resources</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="248" parent="232" name="user_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="249" parent="232" name="role_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="250" parent="232" name="user_id">
+      <ColNames>user_id
+role_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="251" parent="232" name="role_id">
+      <ColNames>role_id</ColNames>
+    </index>
+    <key id="252" parent="232" name="user_id">
+      <ColNames>user_id
+role_id</ColNames>
+      <UnderlyingIndexName>user_id</UnderlyingIndexName>
+    </key>
+    <foreign-key id="253" parent="232" name="user_roles_ibfk_1">
+      <ColNames>user_id</ColNames>
+      <RefSchemaName>spring_security_app</RefSchemaName>
+      <RefTableName>users</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="254" parent="232" name="user_roles_ibfk_2">
       <ColNames>role_id</ColNames>
       <RefSchemaName>spring_security_app</RefSchemaName>
       <RefTableName>roles</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="242" parent="231" name="id">
+    <column id="255" parent="233" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="243" parent="231" name="username">
+    <column id="256" parent="233" name="username">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="244" parent="231" name="password">
+    <column id="257" parent="233" name="password">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="245" parent="231" name="PRIMARY">
+    <key id="258" parent="233" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
