@@ -1,5 +1,6 @@
 package com.webappdatabase.controller;
 
+import com.webappdatabase.model.Resource;
 import com.webappdatabase.model.User;
 import com.webappdatabase.service.SecurityService;
 import com.webappdatabase.service.UserService;
@@ -8,9 +9,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Controller for {@link com.webappdatabase.model.User}'s pages.
@@ -67,8 +69,15 @@ public class UserController {
     }
 
     @RequestMapping(value = {"/", "/welcome"}, method = RequestMethod.GET)
-    public String welcome(Model model) {
-        return "welcome";
+    public List<Resource> welcome(Model model) {
+        
+
+        return Arrays.asList(
+                new Resource("name1", "content1"),
+                new Resource("name2", "content2"),
+                new Resource("name3", "content3"),
+                new Resource("name4", "content4")
+        );
     }
 
     @RequestMapping(value = "/admin", method = RequestMethod.GET)

@@ -30,6 +30,11 @@ public class Resource {
     public Resource() {
     }
 
+    public Resource(String name, String content) {
+        this.name = name;
+        this.content = content;
+    }
+
     public Long getId() {
         return id;
     }

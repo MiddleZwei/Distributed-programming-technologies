@@ -69,3 +69,6 @@ INSERT INTO user_resources VALUES (1, 3);
 INSERT INTO user_resources VALUES (2, 4);
 INSERT INTO user_resources VALUES (2, 5);
 INSERT INTO user_resources VALUES (2, 6);
+
+select name from resources as r, user_resources as ur, users as u
+where r.id = ur.resource_id and u.id = ur.user_id and u.id = 2;

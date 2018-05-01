@@ -20,6 +20,8 @@
 
 <div class="container">
 
+
+
     <c:if test="${pageContext.request.userPrincipal.name != null}">
         <form id="logoutForm" method="POST" action="${contextPath}/logout">
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
@@ -27,6 +29,16 @@
 
         <h2>Welcome ${pageContext.request.userPrincipal.name} | <a onclick="document.forms['logoutForm'].submit()">Logout</a>
         </h2>
+
+        <c:forEach  items="${resourceList}" var="res">
+            <tr>
+                <td>${res.id}</td>
+                <td>${res.name}</td>
+                <td>${res.content}</td>
+                <td>${res.users}</td>
+            </tr>
+            <br>
+        </c:forEach>
 
     </c:if>
 
