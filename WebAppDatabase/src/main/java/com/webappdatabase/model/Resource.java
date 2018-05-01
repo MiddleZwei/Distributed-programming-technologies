@@ -30,6 +30,12 @@ public class Resource {
     public Resource() {
     }
 
+    public Resource(String id, String name, String content) {
+        this.id = Long.parseLong(id);
+        this.name = name;
+        this.content = content;
+    }
+
     public Resource(String name, String content) {
         this.name = name;
         this.content = content;

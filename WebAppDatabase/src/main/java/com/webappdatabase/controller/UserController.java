@@ -70,13 +70,13 @@ public class UserController {
 
     @RequestMapping(value = {"/", "/welcome"}, method = RequestMethod.GET)
     public List<Resource> welcome(Model model) {
-        
+
 
         return Arrays.asList(
-                new Resource("name1", "content1"),
-                new Resource("name2", "content2"),
-                new Resource("name3", "content3"),
-                new Resource("name4", "content4")
+                new Resource("1", "name1", "content1"),
+                new Resource("2", "name2", "content2"),
+                new Resource("3", "name3", "content3"),
+                new Resource("4", "name4", "content4")
         );
     }
 
