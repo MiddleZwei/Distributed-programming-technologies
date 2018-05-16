@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <title>Add integer values</title>
+    <link rel="stylesheet" type="text/css" href="theme.css">
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+    $(document).ready(function () {
+        $('#operand1').on("change", function () {
+            var value1= document.getElementById('operand1').value = document.getElementById('operand1').value || 0;
+            var value2= document.getElementById('operand2').value = document.getElementById('operand2').value || 0;
+            var request = $.ajax({
+                url: "/add",
+                type: "POST",
+                dataType: "json",
+                // contentType: "charset=utf-8",
+                data: {operand1: value1, operand2: value2}
+            });
+            request.done(function (response) {
+                var sum = response.result;
+                $('#result').val(response);
+                console.log('success');
+                console.log(response);
+            });
+            request.fail(function (jqXHR, textStatus) {
+                console.log('failure');
+                console.log(jqXHR);
+                console.log(textStatus);
+            });});
+    });
+
+    $(document).ready(function () {
+        $('#operand2').on("change", function () {
+            var value1= document.getElementById('operand1').value = document.getElementById('operand1').value || 0;
+            var value2= document.getElementById('operand2').value = document.getElementById('operand2').value || 0;
+            var request = $.ajax({
+                url: "/add",
+                type: "POST",
+                dataType: "json",
+                // contentType: "charset=utf-8",
+                data: {operand1: value1, operand2: value2}
+            });
+            request.done(function (response) {
+                var sum = response.result;
+                $('#result').val(response);
+                console.log('success');
+                console.log(response);
+            });
+            request.fail(function (jqXHR, textStatus) {
+                console.log('failure');
+                console.log(jqXHR);
+                console.log(textStatus);
+            });});
+    });
+
+</script>
+
+<div class="container">
+
+    <form id="contact">
+        <h3>Add 2 integer values</h3>
+        <h4>POST method:</h4>
+        <fieldset>
+            <input placeholder="Integer 1" id="operand1" type="text" name="operand1" tabindex="1">
+        </fieldset>
+        <fieldset>
+            <input placeholder="Integer 2" id="operand2" type="text" name="operand2" tabindex="2">
+        </fieldset>
+        <fieldset>
+            <!--<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>-->
+        </fieldset>
+        <hr>
+        <!--<p class="copyright">Designed by <a href="httpd://www.google.com/" target="_blank" title="Colorlib">Illia Halych</a></p>-->
+        <input type="text" id="result">
+    </form>
+
+</div>
+
+</body>
+</html>
