@@ -10,32 +10,6 @@ import java.io.StringWriter;
 
 public class StringResponseWrapper extends HttpServletResponseWrapper {
 
-//    private StringWriter stringWriter = null;
-//
-//    public StringResponseWrapper(ServletResponse servletResponse) {
-//        super((HttpServletResponse) servletResponse);
-//    }
-//
-//    public StringResponseWrapper(HttpServletResponse servletResponse){
-//        super(servletResponse);
-//    }
-//
-//    @Override
-//    public PrintWriter getWriter() throws IOException {
-//        if (stringWriter == null) {
-//            stringWriter = new StringWriter();
-//        }
-//        return new PrintWriter(stringWriter);
-//    }
-//
-//    public ServletOutputStream getOutputStream() throws IOException {
-//        return super.getOutputStream();
-//    }
-//
-//    public StringWriter getStringWriter() {
-//        return stringWriter;
-//    }
-
     private StringWriter stringWriter = null;
 
     public StringResponseWrapper(HttpServletResponse response) {

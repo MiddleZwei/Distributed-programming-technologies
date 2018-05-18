@@ -26,7 +26,6 @@
                 data: {operand1: value1, operand2: value2}
             });
             request.done(function (response) {
-                var sum = response.result;
                 $('#result').val(response);
                 console.log('success');
                 console.log(response);
@@ -50,7 +49,6 @@
                 data: {operand1: value1, operand2: value2}
             });
             request.done(function (response) {
-                var sum = response.result;
                 $('#result').val(response);
                 console.log('success');
                 console.log(response);
@@ -75,11 +73,7 @@
         <fieldset>
             <input placeholder="Integer 2" id="operand2" type="text" name="operand2" tabindex="2">
         </fieldset>
-        <fieldset>
-            <!--<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>-->
-        </fieldset>
         <hr>
-        <!--<p class="copyright">Designed by <a href="httpd://www.google.com/" target="_blank" title="Colorlib">Illia Halych</a></p>-->
         <input type="text" id="result">
     </form>
 
