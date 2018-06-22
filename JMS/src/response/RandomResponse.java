@@ -4,19 +4,23 @@ import request.IRequest;
 import request.RandomRequest;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.Random;
 
 public class RandomResponse implements Serializable, IResponse {
-    private Random rand = new Random();
+    private BigDecimal result;
 
-    public RandomResponse(RandomRequest request) {
+    public RandomResponse() {
+        this.result = new BigDecimal(new Random().nextInt());
     }
 
-    public RandomResponse(IRequest request) {
+    @Override
+    public BigDecimal getResult() {
+        return result;
     }
 
-    public String getMessage() {
-        double n = rand.nextDouble();
-        return Double.toString(n);
+    @Override
+    public String toString() {
+        return "result = " + result + " type = random";
     }
 }

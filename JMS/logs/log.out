@@ -1,0 +1,192 @@
+20:05:07.498 org.apache.activemq.broker.jmx.ManagementContext:JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+20:05:07.553 org.apache.activemq.store.kahadb.plist.PListStoreImpl:PListStore:[/home/ihalych/IdeaProjects/TPO/JMS/activemq-data/localhost/tmp_storage] started
+20:05:07.559 org.apache.activemq.broker.BrokerService:Using Persistence Adapter: KahaDBPersistenceAdapter[/home/ihalych/IdeaProjects/TPO/JMS/activemq-data/localhost/KahaDB]
+20:05:07.968 org.apache.activemq.store.kahadb.MessageDatabase:KahaDB is version 5
+20:05:08.064 org.apache.activemq.store.kahadb.MessageDatabase:Recovering from the journal ...
+20:05:08.072 org.apache.activemq.store.kahadb.MessageDatabase:Recovery replayed 1 operations from the journal in 0.077 seconds.
+20:05:08.263 org.apache.activemq.broker.BrokerService:Apache ActiveMQ 5.9.1 (localhost, ID:illia.halych-45061-1529690708130-0:1) is starting
+20:05:08.401 org.apache.activemq.broker.BrokerService:Apache ActiveMQ 5.9.1 (localhost, ID:illia.halych-45061-1529690708130-0:1) started
+20:05:08.402 org.apache.activemq.broker.BrokerService:For help or more information please see: http://activemq.apache.org
+20:05:08.402 org.apache.activemq.broker.BrokerService:Store limit is 102400 mb (current store usage is 1 mb). The data directory: /home/ihalych/IdeaProjects/TPO/JMS/activemq-data/localhost/KahaDB only has 4831 mb of usable space - resetting to maximum available disk space: 4832 mb
+20:05:08.402 org.apache.activemq.broker.BrokerService:Temporary Store limit is 51200 mb, whilst the temporary data directory: /home/ihalych/IdeaProjects/TPO/JMS/activemq-data/localhost/tmp_storage only has 4831 mb of usable space - resetting to maximum available 4831 mb.
+20:05:08.416 org.apache.activemq.broker.TransportConnector:Connector vm://localhost started
+20:05:08.512 REQUESTER-1:request PREPARED: p1 = 911 p2 = 243 | type => ADD
+20:05:08.536 SERVICE-4:request RECEIVED: p1 = 415 p2 = 258 | type => DIVIDE
+20:05:08.536 SERVICE-4:starting to process the request
+20:05:08.537 SERVICE-1:request RECEIVED: p1 = 983 p2 = 920 | type => ADD
+20:05:08.537 SERVICE-1:starting to process the request
+20:05:08.541 SERVICE-3:request RECEIVED: Random request
+20:05:08.542 SERVICE-3:starting to process the request
+20:05:08.542 SERVICE-0:request RECEIVED: Random request
+20:05:08.542 SERVICE-0:starting to process the request
+20:05:08.543 SERVICE-2:request RECEIVED: p1 = 382 p2 = 931 | type => DIVIDE
+20:05:08.543 SERVICE-2:starting to process the request
+20:05:08.549 REQUESTER-4:request PREPARED: p1 = 738 p2 = 184 | type => SUBTRACT
+20:05:08.552 REQUESTER-2:request PREPARED: p1 = 649 p2 = 849 | type => ADD
+20:05:08.557 REQUESTER-3:request PREPARED: p1 = 399 p2 = 144 | type => MULTIPLY
+20:05:08.564 REQUESTER-6:request PREPARED: p1 = 786 p2 = 685 | type => ADD
+20:05:08.566 REQUESTER-8:request PREPARED: p1 = 722 p2 = 712 | type => SUBTRACT
+20:05:08.566 REQUESTER-9:request PREPARED: Random request
+20:05:08.568 REQUESTER-10:request PREPARED: Random request
+20:05:08.570 REQUESTER-7:request PREPARED: Random request
+20:05:08.570 REQUESTER-5:request PREPARED: p1 = 431 p2 = 335 | type => ADD
+20:05:08.697 REQUESTER-1:request PUT into destination
+20:05:08.737 REQUESTER-4:request PUT into destination
+20:05:08.780 REQUESTER-2:request PUT into destination
+20:05:08.825 REQUESTER-3:request PUT into destination
+20:05:08.869 REQUESTER-6:request PUT into destination
+20:05:08.913 REQUESTER-9:request PUT into destination
+20:05:08.958 REQUESTER-8:request PUT into destination
+20:05:09.002 REQUESTER-10:request PUT into destination
+20:05:09.046 REQUESTER-7:request PUT into destination
+20:05:09.091 REQUESTER-5:request PUT into destination
+20:05:12.059 SERVICE-2:request PROCESSED
+20:05:12.072 REQUESTER-5:response RECEIVED: result = 0 type = arithmetic
+20:05:12.072 REQUESTER-5:request PREPARED: Random request
+20:05:12.176 SERVICE-2:response SENT: result = 0 type = arithmetic
+20:05:12.177 SERVICE-2:request RECEIVED: p1 = 951 p2 = 381 | type => ADD
+20:05:12.177 SERVICE-2:starting to process the request
+20:05:12.209 REQUESTER-5:request PUT into destination
+20:05:12.313 SERVICE-3:request PROCESSED
+20:05:12.326 REQUESTER-3:response RECEIVED: result = 1037387095 type = random
+20:05:12.326 REQUESTER-3:request PREPARED: p1 = 594 p2 = 766 | type => MULTIPLY
+20:05:12.354 SERVICE-3:response SENT: result = 1037387095 type = random
+20:05:12.354 SERVICE-3:request RECEIVED: Random request
+20:05:12.354 SERVICE-3:starting to process the request
+20:05:12.389 REQUESTER-3:request PUT into destination
+20:05:12.445 SERVICE-0:request PROCESSED
+20:05:12.454 REQUESTER-2:response RECEIVED: result = -1544794048 type = random
+20:05:12.454 REQUESTER-2:request PREPARED: Random request
+20:05:12.487 SERVICE-0:response SENT: result = -1544794048 type = random
+20:05:12.488 SERVICE-0:request RECEIVED: p1 = 53 p2 = 977 | type => MULTIPLY
+20:05:12.488 SERVICE-0:starting to process the request
+20:05:12.521 REQUESTER-2:request PUT into destination
+20:05:13.058 SERVICE-4:request PROCESSED
+20:05:13.065 REQUESTER-9:response RECEIVED: result = 2 type = arithmetic
+20:05:13.065 REQUESTER-9:request PREPARED: Random request
+20:05:13.211 SERVICE-4:response SENT: result = 2 type = arithmetic
+20:05:13.213 SERVICE-4:request RECEIVED: p1 = 213 p2 = 282 | type => DIVIDE
+20:05:13.213 SERVICE-4:starting to process the request
+20:05:13.245 REQUESTER-9:request PUT into destination
+20:05:13.472 SERVICE-1:request PROCESSED
+20:05:13.478 REQUESTER-5:response RECEIVED: result = 1903 type = arithmetic
+20:05:13.479 REQUESTER-5:request PREPARED: p1 = 823 p2 = 440 | type => ADD
+20:05:13.480 SERVICE-1:response SENT: result = 1903 type = arithmetic
+20:05:13.481 SERVICE-1:request RECEIVED: Random request
+20:05:13.481 SERVICE-1:starting to process the request
+20:05:13.511 REQUESTER-5:request PUT into destination
+20:05:15.334 SERVICE-2:request PROCESSED
+20:05:15.338 REQUESTER-6:response RECEIVED: result = 1332 type = arithmetic
+20:05:15.338 REQUESTER-6:request PREPARED: p1 = 492 p2 = 875 | type => MULTIPLY
+20:05:15.421 SERVICE-2:response SENT: result = 1332 type = arithmetic
+20:05:15.421 SERVICE-2:request RECEIVED: Random request
+20:05:15.421 SERVICE-2:starting to process the request
+20:05:15.454 REQUESTER-6:request PUT into destination
+20:05:16.025 SERVICE-0:request PROCESSED
+20:05:16.033 REQUESTER-7:response RECEIVED: result = 51781 type = arithmetic
+20:05:16.033 REQUESTER-7:request PREPARED: p1 = 899 p2 = 69 | type => SUBTRACT
+20:05:16.065 SERVICE-0:response SENT: result = 51781 type = arithmetic
+20:05:16.066 SERVICE-0:request RECEIVED: Random request
+20:05:16.066 SERVICE-0:starting to process the request
+20:05:16.099 REQUESTER-7:request PUT into destination
+20:05:16.298 SERVICE-3:request PROCESSED
+20:05:16.302 REQUESTER-3:response RECEIVED: result = -1403041500 type = random
+20:05:16.302 REQUESTER-3:request PREPARED: Random request
+20:05:16.331 SERVICE-3:response SENT: result = -1403041500 type = random
+20:05:16.332 SERVICE-3:request RECEIVED: p1 = 291 p2 = 540 | type => ADD
+20:05:16.332 SERVICE-3:starting to process the request
+20:05:16.365 REQUESTER-3:request PUT into destination
+20:05:16.521 SERVICE-1:request PROCESSED
+20:05:16.524 REQUESTER-6:response RECEIVED: result = 1813824789 type = random
+20:05:16.524 REQUESTER-6:request PREPARED: p1 = 393 p2 = 186 | type => ADD
+20:05:16.554 SERVICE-1:response SENT: result = 1813824789 type = random
+20:05:16.555 SERVICE-1:request RECEIVED: p1 = 238 p2 = 859 | type => SUBTRACT
+20:05:16.556 SERVICE-1:starting to process the request
+20:05:16.587 REQUESTER-6:request PUT into destination
+20:05:16.883 SERVICE-4:request PROCESSED
+20:05:16.890 REQUESTER-4:response RECEIVED: result = 1 type = arithmetic
+20:05:16.890 REQUESTER-4:request PREPARED: Random request
+20:05:16.920 SERVICE-4:response SENT: result = 1 type = arithmetic
+20:05:16.921 SERVICE-4:request RECEIVED: p1 = 552 p2 = 590 | type => ADD
+20:05:16.922 SERVICE-4:starting to process the request
+20:05:16.954 REQUESTER-4:request PUT into destination
+20:05:18.838 SERVICE-2:request PROCESSED
+20:05:18.846 REQUESTER-1:response RECEIVED: result = -814842648 type = random
+20:05:18.846 REQUESTER-1:request PREPARED: Random request
+20:05:19.265 SERVICE-2:response SENT: result = -814842648 type = random
+20:05:19.267 SERVICE-2:request RECEIVED: p1 = 492 p2 = 98 | type => ADD
+20:05:19.267 SERVICE-2:starting to process the request
+20:05:19.296 REQUESTER-1:request PUT into destination
+20:05:19.523 SERVICE-3:request PROCESSED
+20:05:19.526 REQUESTER-7:response RECEIVED: result = 831 type = arithmetic
+20:05:19.526 REQUESTER-7:request PREPARED: Random request
+20:05:19.574 SERVICE-3:response SENT: result = 831 type = arithmetic
+20:05:19.575 SERVICE-3:request RECEIVED: p1 = 289 p2 = 207 | type => SUBTRACT
+20:05:19.575 SERVICE-3:starting to process the request
+20:05:19.607 REQUESTER-7:request PUT into destination
+20:05:19.669 SERVICE-0:request PROCESSED
+20:05:19.676 REQUESTER-8:response RECEIVED: result = 1020441617 type = random
+20:05:19.676 REQUESTER-8:request PREPARED: p1 = 97 p2 = 483 | type => SUBTRACT
+20:05:19.707 SERVICE-0:response SENT: result = 1020441617 type = random
+20:05:19.708 SERVICE-0:request RECEIVED: p1 = 730 p2 = 31 | type => SUBTRACT
+20:05:19.708 SERVICE-0:starting to process the request
+20:05:19.740 REQUESTER-8:request PUT into destination
+20:05:20.287 SERVICE-4:request PROCESSED
+20:05:20.292 REQUESTER-9:response RECEIVED: result = 1142 type = arithmetic
+20:05:20.292 REQUESTER-9:request PREPARED: Random request
+20:05:20.351 SERVICE-4:response SENT: result = 1142 type = arithmetic
+20:05:20.351 SERVICE-4:request RECEIVED: p1 = 7 p2 = 194 | type => ADD
+20:05:20.352 SERVICE-4:starting to process the request
+20:05:20.395 REQUESTER-9:request PUT into destination
+20:05:20.922 SERVICE-1:request PROCESSED
+20:05:20.928 REQUESTER-10:response RECEIVED: result = -621 type = arithmetic
+20:05:20.928 REQUESTER-10:request PREPARED: p1 = 406 p2 = 307 | type => DIVIDE
+20:05:20.983 SERVICE-1:response SENT: result = -621 type = arithmetic
+20:05:20.984 SERVICE-1:request RECEIVED: p1 = 478 p2 = 525 | type => SUBTRACT
+20:05:20.984 SERVICE-1:starting to process the request
+20:05:21.028 REQUESTER-10:request PUT into destination
+20:05:22.694 SERVICE-2:request PROCESSED
+20:05:22.699 REQUESTER-4:response RECEIVED: result = 590 type = arithmetic
+20:05:22.699 REQUESTER-4:request PREPARED: Random request
+20:05:22.782 SERVICE-2:response SENT: result = 590 type = arithmetic
+20:05:22.782 SERVICE-2:request RECEIVED: Random request
+20:05:22.782 SERVICE-2:starting to process the request
+20:05:22.815 REQUESTER-4:request PUT into destination
+20:05:23.122 org.apache.activemq.broker.BrokerService:Apache ActiveMQ 5.9.1 (localhost, ID:illia.halych-45061-1529690708130-0:1) is shutting down
+20:05:23.158 REQUESTER-5:javax.jms.JMSException: peer (vm://localhost#19) stopped.
+20:05:23.168 org.apache.activemq.broker.TransportConnector:Connector vm://localhost stopped
+20:05:23.168 REQUESTER-9:javax.jms.JMSException: peer (vm://localhost#27) stopped.
+20:05:23.171 org.apache.activemq.store.kahadb.plist.PListStoreImpl:PListStore:[/home/ihalych/IdeaProjects/TPO/JMS/activemq-data/localhost/tmp_storage] stopped
+20:05:23.171 org.apache.activemq.store.kahadb.KahaDBStore:Stopping async queue tasks
+20:05:23.171 org.apache.activemq.store.kahadb.KahaDBStore:Stopping async topic tasks
+20:05:23.171 org.apache.activemq.store.kahadb.KahaDBStore:Stopped KahaDB
+20:05:23.495 SERVICE-4:request PROCESSED
+20:05:23.496 org.apache.activemq.ActiveMQMessageConsumer:ID:illia.halych-45061-1529690708130-3:5:1:1 Exception while processing message: ID:illia.halych-46693-1529690437353-3:6:1:1:1
+exceptions.ConnectionException: javax.jms.JMSException: peer (vm://localhost#9) stopped.
+	at entity.Service.onMessage(Service.java:76)
+	at org.apache.activemq.ActiveMQMessageConsumer.dispatch(ActiveMQMessageConsumer.java:1361)
+	at org.apache.activemq.ActiveMQSessionExecutor.dispatch(ActiveMQSessionExecutor.java:131)
+	at org.apache.activemq.ActiveMQSessionExecutor.iterate(ActiveMQSessionExecutor.java:202)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:133)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.jms.JMSException: peer (vm://localhost#9) stopped.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1426)
+	at org.apache.activemq.ActiveMQSession.syncSendPacket(ActiveMQSession.java:1944)
+	at org.apache.activemq.ActiveMQMessageProducer.<init>(ActiveMQMessageProducer.java:125)
+	at org.apache.activemq.ActiveMQSession.createProducer(ActiveMQSession.java:988)
+	at entity.Service.onMessage(Service.java:73)
+	... 8 more
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#9) stopped.
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:205)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:65)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:65)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1097)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1063)
+	... 3 more
+20:05:23.511 org.apache.activemq.broker.BrokerService:Apache ActiveMQ 5.9.1 (localhost, ID:illia.halych-45061-1529690708130-0:1) uptime 16.332 seconds
+20:05:23.511 org.apache.activemq.broker.BrokerService:Apache ActiveMQ 5.9.1 (localhost, ID:illia.halych-45061-1529690708130-0:1) is shutdown

@@ -3,20 +3,19 @@ package request;
 import java.io.Serializable;
 
 public class RandomRequest implements Serializable, IRequest {
-    private String message;
+    private String senderName;
 
-    public RandomRequest() {
+    public RandomRequest(String senderName) {
+        this.senderName = senderName;
     }
 
-    public RandomRequest(String message) {
-        this.message = message;
+    @Override
+    public String getSenderName() {
+        return senderName;
     }
 
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
+    @Override
+    public String toString() {
+        return "Random request";
     }
 }
