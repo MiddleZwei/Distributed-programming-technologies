@@ -1,0 +1,8 @@
+<jaxws:bindings xmlns:jaxws="http://java.sun.com/xml/ns/jaxws"
+                xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+                wsdlLocation="http://localhost:8080/jax-ws-sample/calculator-delayed?wsdl"
+                node="wsdl:definitions">
+
+    <!-- applies to wsdl:definitions node, that would mean the entire wsdl -->
+    <jaxws:enableAsyncMapping>true</jaxws:enableAsyncMapping>
+</jaxws:bindings>

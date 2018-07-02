@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component jdk="1.8" jdk_type="JavaSDK">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="jaxws-rt.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/jax-ws-sample-client/lib/jaxws-rt.jar!/"/>
+	</lib>
+	<levels>
+		<level name="Java EE 6-Java EE 6" value="project"/>
+		<level name="com.kumuluz.ee:kumuluzee-jax-ws-metro:2.5.3" value="project"/>
+	</levels>
+</component>

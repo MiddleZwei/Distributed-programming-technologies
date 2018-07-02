@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="jax-ws-sample">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/sample"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/common"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/delayed"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/mtom"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/addressing"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/adhoc"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/composite"/>
+        <property name="java-output-path" value="/jax-ws-sample/build/classes"/>
+        <property name="context-root" value="jax-ws-sample"/>
+    </wb-module>
+</project-modules>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component jdk="1.8" jdk_type="JavaSDK">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="FastInfoset.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/jax-ws-sample-client/lib/FastInfoset.jar!/"/>
+	</lib>
+	<lib name="gmbal-api-only.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/jax-ws-sample-client/lib/gmbal-api-only.jar!/"/>
+	</lib>
+	<lib name="ha-api.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/jax-ws-sample-client/lib/ha-api.jar!/"/>
+	</lib>
+	<lib name="javax.annotation-api.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/jax-ws-sample-client/lib/javax.annotation-api.jar!/"/>
+	</lib>
+	<lib name="javax.xml.soap-api.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/jax-ws-sample-client/lib/javax.xml.soap-api.jar!/"/>
+	</lib>
+	<lib name="jaxb-api.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/jax-ws-sample-client/lib/jaxb-api.jar!/"/>
+	</lib>
+	<lib name="jaxb-core.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/jax-ws-sample-client/lib/jaxb-core.jar!/"/>
+	</lib>
+	<lib name="jaxb-impl.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/jax-ws-sample-client/lib/jaxb-impl.jar!/"/>
+	</lib>
+	<lib name="jaxb-jxc.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/jax-ws-sample-client/lib/jaxb-jxc.jar!/"/>
+	</lib>
+	<lib name="jaxb-xjc.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/jax-ws-sample-client/lib/jaxb-xjc.jar!/"/>
+	</lib>
+	<lib name="jaxws-api.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/jax-ws-sample-client/lib/jaxws-api.jar!/"/>
+	</lib>
+	<lib name="jaxws-rt.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/jax-ws-sample-client/lib/jaxws-rt.jar!/"/>
+	</lib>
+	<lib name="jaxws-tools.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/jax-ws-sample-client/lib/jaxws-tools.jar!/"/>
+	</lib>
+	<lib name="jsr181-api.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/jax-ws-sample-client/lib/jsr181-api.jar!/"/>
+	</lib>
+	<lib name="management-api.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/jax-ws-sample-client/lib/management-api.jar!/"/>
+	</lib>
+	<lib name="mimepull.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/jax-ws-sample-client/lib/mimepull.jar!/"/>
+	</lib>
+	<lib name="policy.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/jax-ws-sample-client/lib/policy.jar!/"/>
+	</lib>
+	<lib name="resolver.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/jax-ws-sample-client/lib/resolver.jar!/"/>
+	</lib>
+	<lib name="saaj-impl.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/jax-ws-sample-client/lib/saaj-impl.jar!/"/>
+	</lib>
+	<lib name="stax-ex.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/jax-ws-sample-client/lib/stax-ex.jar!/"/>
+	</lib>
+	<lib name="stax2-api.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/jax-ws-sample-client/lib/stax2-api.jar!/"/>
+	</lib>
+	<lib name="streambuffer.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/jax-ws-sample-client/lib/streambuffer.jar!/"/>
+	</lib>
+	<lib name="woodstox-core-asl.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/jax-ws-sample-client/lib/woodstox-core-asl.jar!/"/>
+	</lib>
+	<levels>
+		<level name="org.hamcrest:hamcrest-all:1.3" value="project"/>
+		<level name="com.kumuluz.ee:kumuluzee-jax-ws-metro:2.5.3" value="project"/>
+	</levels>
+</component>

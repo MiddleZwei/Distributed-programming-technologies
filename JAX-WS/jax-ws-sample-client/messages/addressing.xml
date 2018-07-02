@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+	<S:Header>
+		<To xmlns="http://www.w3.org/2005/08/addressing">http://localhost:9090/jax-ws-sample/sample-addressing</To>
+		<Action xmlns="http://www.w3.org/2005/08/addressing">http://addressing.jaxws.tpr.pjwstk.edu.pl/SampleAddressing/replyAddressingRequest</Action>
+		<ReplyTo xmlns="http://www.w3.org/2005/08/addressing">
+			<Address>http://www.w3.org/2005/08/addressing/anonymous</Address>
+		</ReplyTo>
+		<FaultTo xmlns="http://www.w3.org/2005/08/addressing">
+			<Address>http://www.w3.org/2005/08/addressing/anonymous</Address>
+		</FaultTo>
+		<MessageID xmlns="http://www.w3.org/2005/08/addressing">uuid:2acf223e-c263-47d8-a0c1-2e4f1e1d1b1f</MessageID>
+	</S:Header>
+	<S:Body>
+		<ns2:replyAddressing xmlns:ns2="http://addressing.jaxws.tpr.pjwstk.edu.pl/">
+			<arg0>request</arg0>
+		</ns2:replyAddressing>
+	</S:Body>
+</S:Envelope>

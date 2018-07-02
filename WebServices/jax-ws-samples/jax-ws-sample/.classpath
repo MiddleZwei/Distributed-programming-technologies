@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="common"/>
+	<classpathentry kind="src" path="sample"/>
+	<classpathentry kind="src" path="delayed"/>
+	<classpathentry kind="src" path="mtom"/>
+	<classpathentry kind="src" path="addressing"/>
+	<classpathentry kind="src" path="adhoc"/>
+	<classpathentry kind="src" path="composite"/>
+	<classpathentry kind="src" path="search"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/common"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/jax-ws-sample-client/lib/jaxws-rt.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Java EE 6-Java EE 6"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/com.kumuluz.ee:kumuluzee-jax-ws-metro:2.5.3"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

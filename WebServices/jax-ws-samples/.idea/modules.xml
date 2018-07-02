@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jax-ws-sample/jax-ws-sample.iml" filepath="$PROJECT_DIR$/jax-ws-sample/jax-ws-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jax-ws-sample-client/jax-ws-sample-client.iml" filepath="$PROJECT_DIR$/jax-ws-sample-client/jax-ws-sample-client.iml" />
+    </modules>
+  </component>
+</project>
